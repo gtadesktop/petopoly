@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>PetFinanz</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Neuer Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- AUTH-BEREICH -->
+  <main id="auth-container">
+    <h2>PetFinanz</h2>
+
+    <form id="login-form" class="auth-form">
+      <input name="username" type="text" placeholder="Nutzername" required>
+      <input name="password" type="password" placeholder="Passwort" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="register-form" class="auth-form">
+      <input name="username" type="text" placeholder="Nutzername" required>
+      <input name="password" type="password" placeholder="Passwort" required>
+      <button type="submit">Registrieren</button>
+    </form>
+
+    <button id="guest-btn" class="guest-btn">Als Gast spielen</button>
+    <div id="auth-msg" class="auth-msg"></div>
+  </main>
+
+  <!-- SPIEL-UI -->
+  <div id="main-container" class="hidden">
+    <header>
+      <h1>PetFinanz</h1>
+      <nav>
+        <button data-view="shop">Shop</button>
+        <button data-view="inventory">Meine Pets</button>
+        <button data-view="bank">Bank</button>
+        <button data-view="quests">Quests</button>
+        <button data-view="friends">Freunde</button>
+        <button data-view="news">News</button>
+        <button data-view="arena">Arena</button>
+        <button data-view="chat">Chat</button>
+      </nav>
+    </header>
+    <main id="view-container"></main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
